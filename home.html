@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FictionFolder</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/home-style.css">
+    <link rel="stylesheet" type="text/css" href="css/shared-visitor-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <nav>
+
+        <a href="home.html">About</a>
+        <a href="https://www.fictionfolder.com/login">Log In</a>
+        <a href="https://www.fictionfolder.com/signup">Sign Up</a>
+        <a href="view-plans.html">Subscription Plans</a>
+        <a href="/learn-more.html">Learn More</a>
+
+    </nav>
+
+    <i class="fa-solid fa-bars"></i>
+
+    <script>document.querySelector('.fa-bars').addEventListener('click', event => {
+        document.querySelector('nav').classList.toggle('hidden');
+    }); </script>
+
+
+        <header>
+            <div class="header-bg">
+                <h1 class="top">FICTIONFOLDER</h1>
+                <h1 class="middle">FICTIONFOLDER</h1>
+                <h1 class="bottom">FICTIONFOLDER</h1>
+            </div>
+            <div class="header-content">
+                <img src="images/logo-graphic-lettered.png" alt="">
+                <div class="header-content-text">
+                    <h1>One Place for all Your Writing Resources</h1>
+                    <p>Unorganized fiction projects? Bring everything together in this simple website app.</p>
+                    <a href="https://fictionfolder.com/signup">Get Started</a>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+        <div class="card unmask" id="project">
+            <img src="images/project-card.png" alt="">
+            <div class="card-text">
+                <h1>The Project</h1>
+                <p>That fantasy novel you've always wanted to write? 
+                    That's a project. FictionFolder allows you to organize your projects into separate, organized folders.</p>
+            </div>
+        </div>
+
+        <div class="card masked" style="border-color:#807514;">
+            <div class="card-text">
+                <h1><i style="color: #3030b0;" class="fa-solid fa-book-open"></i> &ThickSpace; The Text Editor</h1>
+                <p>Write and organize drafts in a basic, distraction-free environment.</p>
+            </div>
+            <video autoplay muted loop>
+                <source src="images/text-editor-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+            
+        <div class="card masked" style="border-color: #3030b0;">
+            <video autoplay muted loop>
+                <source src="images/plotbuilder-demo.mp4" type="video/mp4">
+            </video>
+            <div class="card-text">
+                <h1><i style="color: #807514;" class="fa-solid fa-list"></i> &ThickSpace; The Plotbuilder</h1>
+                <p>Open, continue, and close plot threads, track plot events, and view project characters.</p>
+            </div>
+        </div>
+
+        <div class="card masked" style="border-color:#807514;">
+            <div class="card-text">
+                <h1><i style="color: #3030b0;" class="fa-solid fa-earth"></i> &ThickSpace; The Worldbuilder</h1>
+                <p>Create interactive note documents and search Wikipedia to research narrative settings.</p>
+            </div>
+            <video autoplay muted loop>
+                <source src="images/worldbuilder-demo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card masked" style="border-color: #3030b0;">
+            <video autoplay muted loop>
+                <source src="images/character-designer-demo.mp4" type="video/mp4">
+            </video>
+            <div class="card-text">
+                <h1><i style="color: #807514;" class="fa-solid fa-person"></i> &ThickSpace; The Character Designer</h1>
+                <p>Search names, use description and personality templates, and explore advanced character development entry fields.</p>
+            </div>
+        </div>
+
+        <script>let cards = document.querySelectorAll('.card');
+        let html = document.querySelector('html');/*
+            for (let card of cards) {
+                card.addEventListener('mousewheel', event => {
+                    if (card.classList.contains('masked')) {
+                        card.classList.remove('masked');
+                        card.classList.add('unmask');
+                    }
+                });
+            }*/
+           html.addEventListener('mousewheel', event => {
+                for (let card of cards) {
+                    if (html.scrollTop + 400 > card.offsetTop && card.classList.contains('masked')) {
+                        card.classList.remove('masked');
+                        card.classList.add('unmask');
+                    };
+                };
+           });
+        </script>
+
+    </main>
+
+</body>
+<script>
+    window.addEventListener('load', event => {
+        html.scrollTop = 0;
+    });
+</script>
+</html>

@@ -1,0 +1,122 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.075);
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/*BODY>BACKGROUND STYLES*/
+
+.background {
+    font-size: 8rem;
+    letter-spacing: 40px;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top {
+    top: 30px;
+    opacity: 0.3;
+}
+
+.middle {
+    opacity: 0.2;
+}
+
+.bottom {
+    bottom: 30px;
+    opacity: 0.1;
+}
+
+/*MAIN STYLES*/
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+.text {
+    height: max-content;
+    width: 80%;
+    background-color: white;
+    margin: 80px 0;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text img {
+    width: 40%;
+}
+
+.text .logo {
+    align-self: center;
+}
+
+.text h1 {
+    font-size: 3rem;
+    color: #807514;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.text p {
+    font-size: 1.4rem;
+    line-height: 30px;
+    opacity: 0.85;
+    margin: 20px 50px;
+}
+
+@media (max-width: 950px) {
+
+    /*MAIN STYLES*/
+
+    .text img {
+        float: none;
+        width: 75%;
+    }
+
+    .text .logo {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /*MAIN STYLES*/
+
+    .text {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .text p {
+        margin: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    /*MAIN STYLES*/
+
+    .text p {
+        margin: 8px;
+    }
+
+}

@@ -1,0 +1,100 @@
+
+/*CSS RESET*/
+
+html {
+    font-family: Bahnschrift, 'arial narrow', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*SHARED STYLES*/
+
+.hidden {
+    display: none;
+}
+
+/*BODY POSITIONING STYLES*/
+
+body {
+    height: 100vh;
+}
+
+nav {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+/*NAV STYLES*/
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 5;
+}
+
+nav a, header a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+    margin-bottom: 15px;
+}
+
+nav a:hover, header a:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.4);
+}
+
+/*TOGGLE NAV STYLES*/
+
+.fa-bars {
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    background-color: white;
+    z-index: 3;
+    border-radius: 50%;
+    padding: 14px;
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2);
+    display: none !important;
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.4);
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 700px) {
+
+    /*TOGGLE NAV STYLES*/
+
+    .fa-bars {
+        display: block !important;
+    }
+}
