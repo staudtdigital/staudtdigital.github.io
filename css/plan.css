@@ -64,12 +64,12 @@ body {
 /*BODY>PLAN STYLES*/
 
 .plan-container {
-    height: 70vh;
     width: 100%;
     align-self: center;
     display: flex;
     justify-content: space-around;
     background-color: white;
+    padding-bottom: 30px;
 }
 
 .plan-container .plan {

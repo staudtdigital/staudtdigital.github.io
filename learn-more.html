@@ -7,34 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FictionFolder | Learn More</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/shared-visitor-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
     <link rel="stylesheet" type="text/css" href="css/learn-more.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
-    <h1 class="background top">FICTIONFOLDER</h1>
-    <h1 class="background middle">FICTIONFOLDER</h1>
-    <h1 class="background bottom">FICTIONFOLDER</h1>
-
-    <nav>
-
-        <a href="index.html">About</a>
-        <a href="https://www.fictionfolder.com/login">Log In</a>
-        <a href="https://www.fictionfolder.com/signup">Sign Up</a>
-        <a href="view-plans.html">Subscription Plans</a>
-        <a href="learn-more.html">Learn More</a>
-
+    <nav class="mobile-nav rad-10 b-offwhite flex flex-column align-center fill hidden">
+        <h1 class="black op-7"><i class="fa-solid fa-x"></i></h1>
+        <a href="learn-more.html"><h1 class="black op-7">About</h1></a>
+        <a href="view-plans.html"><h1 class="black op-7">Pricing</h1></a>
+        <a href="https://app.fictionfolder.com/login"><h1 class="black op-7">Sign In</h1></a>
+        <a href="https://app.fictionfolder.com/signup"><h1 class="black op-7">Sign Up</h1></a>
     </nav>
 
-    <i class="fa-solid fa-bars"></i>
+    <main style="background-color: white;">
 
-    <script>document.querySelector('.fa-bars').addEventListener('click', event => {
-        document.querySelector('nav').classList.toggle('hidden');
-    }); </script>
-
-    <main>
+        <div class="flex flex-column fill b-white section-padding" style="padding-top: 30px;">
+            <nav class="fill flex justify-between align-center margin-b-40">
+                <a href="https://www.fictionfolder.com">
+                    <div class="logo flex align-center">
+                        <img src="images/index/logo-graphic-lettered.png" alt="fictionfolder logo" class="circle little-circle margin-r-15" style="border: 2px solid #807514;">
+                        <p class="btn-text gold bold">fictionfolder</p>
+                    </div>
+                </a>
+                <i class="fa-solid fa-bars btn-text black desktop-hide" style="margin-right: 15px;"></i>
+                <script>
+                    document.querySelector('.fa-bars').addEventListener('click', event => {
+                        document.querySelector('.mobile-nav').classList.toggle('hidden');
+                    }); document.querySelector('.fa-x').addEventListener('click', event => {
+                        document.querySelector('.mobile-nav').classList.add('hidden');
+                    });
+                </script>
+                <div class="flex mobile-hide ipad-hide">
+                    <a href="learn-more.html" class="black op-7 text margin-r-20">About</a>
+                    <a href="view-plans.html" class="black op-7 text margin-r-20">Pricing</a>
+                    <a href="https://app.fictionfolder.com/login" class="black op-7 text margin-r-20">Sign In</a>
+                    <a href="https://app.fictionfolder.com/signup" class="black op-7 text margin-r-20">Sign Up</a>
+                </div>
+            </nav>
+        </div>
 
         <div class="text">
             <img class="logo" src="images/logo-graphic-lettered.png" alt="">
