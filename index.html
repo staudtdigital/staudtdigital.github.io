@@ -1,129 +1,252 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FictionFolder</title>
+    <title>Fictionfolder: Organize Stories on the Web</title>
+    <link rel="stylesheet" type="text/css" href="css/index-style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="css/home-style.css">
-    <link rel="stylesheet" type="text/css" href="css/shared-visitor-style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
 	 crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <meta name="description" content="Fictionfolder is designed to bring all your online creative writing resources together. Get started for free and get ready to boost your fiction project.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Fictionfolder: Organize Stories on the Web">
+    <meta property="og:description" content="Writing fiction on the web is a mess. Organize it.">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.fictionfolder.com">
+    <meta property="og:image" content="images/index/logo-graphic-lettered.png">
+    <meta property="og:site-name" content="fictionfolder">
+    <meta name="keywords" content="organize fiction writing app" />
+
 </head>
-<body>
+<body class="fill">
 
-    <nav>
-
-        <a href="index.html">About</a>
-        <a href="https://www.fictionfolder.com/login">Log In</a>
-        <a href="https://www.fictionfolder.com/signup">Sign Up</a>
-        <a href="view-plans.html">Subscription Plans</a>
-        <a href="/learn-more.html">Learn More</a>
-
+    <nav class="mobile-nav rad-10 b-offwhite flex flex-column align-center fill hidden">
+        <h1 class="black op-7"><i class="fa-solid fa-x"></i></h1>
+        <a href="learn-more.html"><h1 class="black op-7">About</h1></a>
+        <a href="view-plans.html"><h1 class="black op-7">Pricing</h1></a>
+        <a href="https://app.fictionfolder.com/login"><h1 class="black op-7">Sign In</h1></a>
+        <a href="https://app.fictionfolder.com/signup"><h1 class="black op-7">Sign Up</h1></a>
     </nav>
 
-    <i class="fa-solid fa-bars"></i>
+    <main class="fill">
 
-    <script>document.querySelector('.fa-bars').addEventListener('click', event => {
-        document.querySelector('nav').classList.toggle('hidden');
-    }); </script>
-
-
-        <header>
-            <div class="header-bg">
-                <h1 class="top">FICTIONFOLDER</h1>
-                <h1 class="middle">FICTIONFOLDER</h1>
-                <h1 class="bottom">FICTIONFOLDER</h1>
+        <div class="flex flex-column fill b-white section-padding" style="padding-top: 30px;">
+            <nav class="fill flex justify-between align-center margin-b-40">
+                <a href="https://www.fictionfolder.com">
+                    <div class="logo flex align-center">
+                        <img src="images/index/logo-graphic-lettered.png" alt="fictionfolder logo" class="circle little-circle margin-r-15" style="border: 2px solid #807514;">
+                        <p class="btn-text gold bold">fictionfolder</p>
+                    </div>
+                </a>
+                <i class="fa-solid fa-bars btn-text black desktop-hide"></i>
+                <script>
+                    document.querySelector('.fa-bars').addEventListener('click', event => {
+                        document.querySelector('.mobile-nav').classList.toggle('hidden');
+                    }); document.querySelector('.fa-x').addEventListener('click', event => {
+                        document.querySelector('.mobile-nav').classList.add('hidden');
+                    });
+                </script>
+                <div class="flex mobile-hide ipad-hide">
+                    <a href="learn-more.html" class="black op-7 text margin-r-20">About</a>
+                    <a href="view-plans.html" class="black op-7 text margin-r-20">Pricing</a>
+                    <a href="https://app.fictionfolder.com/login" class="black op-7 text margin-r-20">Sign In</a>
+                    <a href="https://app.fictionfolder.com/signup" class="black op-7 text margin-r-20">Sign Up</a>
+                </div>
+            </nav>
+            <h1 class="black weight-normal margin-b-10">Writing fiction on the web is a mess.</h1>
+            <h1 class="black bold margin-b-20">Organize it.</h1>
+            <div class="fill flex" style="position: relative;">
+                <div class="flex flex-column head-text">
+                    <p class="text op-8 margin-b-20">
+                        Creating quality stories is hard enough without dozens of internet resources.
+                        Centralize your inspiration with Fictionfolder.
+                    </p>
+                    <div class="fill flex header-btns">
+                        <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-black hov-black white rad-10 bold t-align-center">Get Organized</a>
+                        <a href="learn-more.html" class="btn btn-text gold b-lightgray hov-lightgray rad-10 t-align-center">Learn More</a>
+                    </div>
+                </div>
+                <img src="images/index/header graphic.png" alt="fiction on the web" class="mobile-hide ipad-hide head-img">
             </div>
-            <div class="header-content">
-                <img src="images/logo-graphic-lettered.png" alt="">
-                <div class="header-content-text">
-                    <h1>One Place for all Your Writing Resources</h1>
-                    <p>Unorganized fiction projects? Bring everything together in this simple website app.</p>
-                    <a href="https://www.fictionfolder.com/signup">Get Started</a>
+        </div>
+
+        <div class="flex section fill b-black">
+            <img src="images/index/messiness graphic.png" alt="messy writing apps" class="block-img op-7">
+            <div class="block-text flex flex-column">
+                <h2 class="bold white margin-b-20 op-8">Ever get the feeling that your apps are exponentially increasing?</h2>
+                <p class="text white op-6 margin-b-20">
+                    Wikipedia, Notepad, Google Docs, Pinterest . . .
+                    it just keeps going. Inspiration and execution require a lot of tools!
+                    But sometimes it gets a little messy . . .
+                </p>
+                <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-white hov-white dark-gold rad-10 bold t-align-center">Bring Them Together</a>
+            </div>
+        </div>
+
+        <img src="images/index/messiness poly.png" alt="" class="fill" style="position: relative; bottom: -10px;">
+        <div class="flex section fill b-white">
+            <div class="flex flex-column block-text fill">
+                <h2 class="black margin-b-30">Consolidate your story</h2>
+                <p class="text dark-gold op-8 margin-b-30 bold">
+                    Fictionfolder is made to integrate the functionality of all the tools necessary for creating stories.
+                    We hope to take the simple infrastructure it is right now and build it up to interact with all the formats and apps you already use.
+                </p>
+                <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-offwhite hov-lightgray offblack rad-10 margin-b-20 bold t-align-center">Start for free</a>
+            </div>
+            <img src="images/index/organize graphic.png" alt="organize online stories" class="block-img">
+        </div>
+
+        <div class="flex section-padding flex-column fill b-offwhite">
+            <h2 class="dark-gold margin-b-20 t-align-center">The Project</h2>
+            <img src="images/index/project graphic.png" alt="organize with a project" class="block-img margin-b-20">
+            <p class="text black op-7 margin-b-20 t-align-center block-text">
+                It can be that fantasy novel you've always wanted to write, the triller you've been working on for a year, or the romance you just came up with.
+                If it's a story idea that's going to need a lot of work, it's a project.
+            </p>
+            <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-darkergray hov-darkergray white rad-10 bold" style="align-self: center;">Create my first</a>
+        </div>
+
+        <div class="flex section-padding flex-column fill b-offwhite">
+            <div class="flex fill editor-div">
+                <div class="editor editor-1 editor-right b-white rad-10 padding-10 flex flex-column">
+                    <h3 class="black margin-b-20 margin-t-20 bold">Get started with a setting . . .</h3>
+                    <div class="flex fill editor-graphic">
+                        <div class="flex align-center justify-center circle big-circle b-lightgray">
+                            <h2><i class="fa-solid fa-earth black"></i></h2>
+                        </div>
+                        <img src="images/index/Worldbuilder screen.png" alt="create a setting" class="editor-img margin-b-20 margin-t-20 border-gray mobile-hide">
+                        <img src="images/index/worldbuilder screen mobile.png" alt="create a setting" class="editor-img margin-b-20 margin-t-20 border-gray ipad-hide">
+                    </div>
+                    <ul class="text op-8 margin-l-20 margin-b-30">
+                        <li>Search Wikipedia articles and add relevant paragraphs to the document.</li>
+                        <li>Create research headers and in-text notes for ideas and references.</li>
+                    </ul>
+                </div>
+
+                <div class="editor editor-2 editor-left editor-top editor-up b-offblack rad-10 padding-10 flex flex-column">
+                    <h3 class="white margin-b-20 margin-t-20 bold">. . . Or a character</h3>
+                    <div class="flex fill editor-graphic">
+                        <div class="flex align-center justify-center circle big-circle b-lightgray">
+                            <h2><i class="fa-solid fa-person black"></i></h2>
+                        </div>
+                        <img src="images/index/character dez screen.png" alt="create a character" class="editor-img margin-b-20 margin-t-20 mobile-hide">
+                        <img src="images/index/character dez screen mobile.png" alt="create a character" class="editor-img margin-b-20 margin-t-20 ipad-hide">
+                    </div>
+                    <ul class="text white op-6 margin-l-20 margin-b-30">
+                        <li>Fill out character attribute and development entry fields.</li>
+                        <li>Search lists of character names and personalities.</li>
+                        <li>Upload images/index and build your character's profile, from basic characteristics to advanced.</li>
+                    </ul>
                 </div>
             </div>
 
-        </header>
+            <div class="flex fill editor-div">
+                <div class="editor editor-2 editor-right editor-top b-offblack rad-10 padding-10 flex flex-column">
+                    <h3 class="white margin-b-20 margin-t-20 bold">Turn it into a plot . . .</h3>
+                    <div class="flex fill editor-graphic">
+                        <div class="flex align-center justify-center circle big-circle b-lightgray">
+                            <h2><i class="fa-solid fa-list-ul black"></i></h2>
+                        </div>
+                        <img src="images/index/plotbuilder screen.png" alt="create a plot" class="editor-img margin-b-20 margin-t-20 mobile-hide">
+                        <img src="images/index/plotbuilder screen mobile.png" alt="create a plot" class="editor-img margin-b-20 margin-t-20 ipad-hide">
+                    </div>
+                    <ul class="text white op-6 margin-l-20 margin-b-30">
+                        <li>Create and develop narrative threads.</li>
+                        <li>Use a thread tracker to make sure plot elements are properly opened and closed.</li>
+                        <li>View project characters while plotting.</li>
+                </div>
 
-        <main>
-
-        <div class="card unmask" id="project">
-            <img src="images/project-card.png" alt="">
-            <div class="card-text">
-                <h1>The Project</h1>
-                <p>That fantasy novel you've always wanted to write? 
-                    That's a project. FictionFolder allows you to organize your projects into separate, organized folders.</p>
+                <div class="editor editor-1 editor-left editor-up b-white rad-10 padding-10 flex flex-column">
+                    <h3 class="black margin-b-20 margin-t-30 bold">. . . Then a draft</h3>
+                    <div class="flex fill editor-graphic">
+                        <div class="flex align-center justify-center circle big-circle b-lightgray">
+                            <h2><i class="fa-solid fa-book-open black"></i></h2>
+                        </div>
+                        <img src="images/index/text editor screen.png" alt="write a draft" class="editor-img margin-b-20 margin-t-20 border-gray mobile-hide">
+                        <img src="images/index/text editor screen mobile.png" alt="write a draft" class="editor-img margin-b-20 margin-t-20 border-gray ipad-hide">
+                    </div>
+                    <ul class="text op-8 margin-l-20 margin-b-30">
+                        <li>Give narratives life in a simple, distraction-free environment.</li>
+                        <li>Customive basic formatiing and view basic document data.</li>
+                    </ul>
+                </div>
             </div>
         </div>
 
-        <div class="card masked" style="border-color:#807514;">
-            <div class="card-text">
-                <h1><i style="color: #3030b0;" class="fa-solid fa-book-open"></i> &ThickSpace; The Text Editor</h1>
-                <p>Write and organize drafts in a basic, distraction-free environment.</p>
+        <div class="flex section fill b-offblack">
+            <div class="flex flex-column block-text">
+                <h2 class="white margin-b-5">Start for free.</h2>
+                <h2 class="white margin-b-20">No trial periods or hidden fees.</h2>
+                <p class="text light-gold op-8 margin-b-20">
+                    Get access to all the editors and their features, absolutely free — and absolutely no expiration date.
+                    Try it out for as long as you want, then upgrade if you want.
+                </p>
+                <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-white hov-white black rad-10 bold margin-t-10 margin-b-20">Get the Skinny Folder</a>
             </div>
-            <video autoplay muted loop>
-                <source src="images/text-editor-demo.mp4" type="video/mp4">
-            </video>
-        </div>
-            
-        <div class="card masked" style="border-color: #3030b0;">
-            <video autoplay muted loop>
-                <source src="images/plotbuilder-demo.mp4" type="video/mp4">
-            </video>
-            <div class="card-text">
-                <h1><i style="color: #807514;" class="fa-solid fa-list"></i> &ThickSpace; The Plotbuilder</h1>
-                <p>Open, continue, and close plot threads, track plot events, and view project characters.</p>
-            </div>
-        </div>
-
-        <div class="card masked" style="border-color:#807514;">
-            <div class="card-text">
-                <h1><i style="color: #3030b0;" class="fa-solid fa-earth"></i> &ThickSpace; The Worldbuilder</h1>
-                <p>Create interactive note documents and search Wikipedia to research narrative settings.</p>
-            </div>
-            <video autoplay muted loop>
-                <source src="images/worldbuilder-demo.mp4" type="video/mp4">
-            </video>
-        </div>
-
-        <div class="card masked" style="border-color: #3030b0;">
-            <video autoplay muted loop>
-                <source src="images/character-designer-demo.mp4" type="video/mp4">
-            </video>
-            <div class="card-text">
-                <h1><i style="color: #807514;" class="fa-solid fa-person"></i> &ThickSpace; The Character Designer</h1>
-                <p>Search names, use description and personality templates, and explore advanced character development entry fields.</p>
+            <div class="mobile-hide ipad-hide b-white rad-10 desktop-flex flex-column" style="height:60vh;">
+                <h4 class="black t-align-center margin-t-40 margin-b-50 bold">The Skinny Folder</h4>
+                <ul class="op-8 black">
+                    <li>Full access to project viewers and editors.</li>
+                    <li>Create 2 projects and 5 project documents.</li>
+                    <li>Ability to use 100% of editor functions.</li>
+                </ul>
             </div>
         </div>
 
-        <script>let cards = document.querySelectorAll('.card');
-        let html = document.querySelector('html');/*
-            for (let card of cards) {
-                card.addEventListener('mousewheel', event => {
-                    if (card.classList.contains('masked')) {
-                        card.classList.remove('masked');
-                        card.classList.add('unmask');
-                    }
-                });
-            }*/
-           html.addEventListener('mousewheel', event => {
-                for (let card of cards) {
-                    if (html.scrollTop + 400 > card.offsetTop && card.classList.contains('masked')) {
-                        card.classList.remove('masked');
-                        card.classList.add('unmask');
-                    };
-                };
-           });
-        </script>
+        <div class="section fill flex b-lightgray">
+            <div class="mobile-hide ipad-hide b-white rad-10 desktop-flex flex-column" style="height:60vh;">
+                <h4 class="black t-align-center margin-t-40 margin-b-50 bold">The Basic Folder</h4>
+                <ul class="op-8 black">
+                    <li>Full access to project viewers and editors.</li>
+                    <li>Create unlimited projects and documents.</li>
+                    <li>Ability to use 100% of editor functions.</li>
+                </ul>
+            </div>
+            <div class="flex flex-column block-text desktop-margin-l-20">
+                <h2 class="bold darker-gold margin-t-20 margin-b-5">Want full access?</h2>
+                <h2 class="bold darker-gold margin-b-20">Get started at $5 a month.</h2>
+                <p class="text black op-8 margin-b-30">Create unlimited projects and documents for $5 a month, cancelable at any time.</p>
+                <a href="https://app.fictionfolder.com/signup" class="btn btn-text b-offblack hov-black white rad-10 bold margin-b-20">Get the Basic Folder</a>
+            </div>
+        </div>
+
+        <img src="images/index/footer poly.png" alt="" class="fill">
+
+        <div class="section-padding flex-column fill b-black flex flex-column">
+            <div class="flex footer-headers">
+                <h2 class="white bold f-head-1 margin-b-10">Designed to expand and improve</h2>
+                <h2 class="white bold f-head-2 margin-b-20">We'd love your feedback!</h2>
+            </div>
+            <p class="text t-align-center light-gold block-text margin-b-10 f-text">
+                Right now, Fictionfolder is pretty simple, but with your support, we hope to turn it into a truly useful writing tool that will make your stories the best they can be.
+            </p>
+            <p class="text t-align-center light-gold block-text margin-b-30 f-text">
+                There are so many places we want this app to go, but none of it will be possible without a group of writers willing to give it a try!
+            </p>
+            <h2 class="bold white t-align-center margin-b-40">Build a community to improve writing skills + tools!</h2>
+            <img src="images/index/logo-graphic-lettered.png" class="circle align-self-center margin-b-20" style="height:150px;width:150px;" alt="fictionfolder logo">
+            <p class="btn-text bold white t-align-center margin-b-40">fictionfolder</p>
+            <div class="fill flex footer-div justify-between">
+                <footer class="b-white rad-10 padding-20 flex flex-column">
+                    <a href="https://www.fictionfolder.com" class="btn-text bold black margin-t-20 margin-b-10">Home</a>
+                    <a href="learn-more.html" class="text black op-8 margin-b-5">About</a>
+                    <a href="view-plans.html" class="text black op-8 margin-b-5">Pricing</a>
+                    <a href="https://app.fictionfolder.com/login" class="text black op-8 margin-b-5">Sign In</a>
+                    <a href="https://app.fictionfolder.com/signup" class="text black op-8 margin-b-30">Sign Up</a>
+                </footer>
+
+                <footer class="b-white rad-10 padding-20 flex flex-column">
+                    <a href="https://app.fictionfolder.com" class="btn-text bold black margin-t-20 margin-b-10">App</a>
+                    <a href="https://app.fictionfolder.com/projects" class="text black op-8 margin-b-5">Projects</a>
+                </footer>
+            </div>
+
+            <p class="op-6 white t-align-center margin-t-20 margin-b-20" style="font-size: 13px;">&copy; fictionfolder 2024. All rights reserved.</p>
+
+        </div>
 
     </main>
-
 </body>
-<script>
-    window.addEventListener('load', event => {
-        html.scrollTop = 0;
-    });
-</script>
 </html>

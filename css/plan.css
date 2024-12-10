@@ -22,17 +22,22 @@ html {
 
 body {
     display: flex;
+    flex-direction: column;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: rgba(0,0,0,0.075);
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-}
+} */
 
 /*BODY>BACKGROUND STYLES*/
 
-.background {
+/* .background {
     font-size: 8rem;
     letter-spacing: 40px;
     position: absolute;
@@ -54,15 +59,17 @@ body {
 .bottom {
     bottom: 30px;
     opacity: 0.1;
-}
+} */
 
 /*BODY>PLAN STYLES*/
 
 .plan-container {
     height: 70vh;
-    width: 80%;
+    width: 100%;
+    align-self: center;
     display: flex;
     justify-content: space-around;
+    background-color: white;
 }
 
 .plan-container .plan {
@@ -73,6 +80,8 @@ body {
     align-items: center;
     width: 40%;
     border-radius: 5px;
+    height: fit-content;
+    padding-bottom: 15px;
 }
 
 .plan-container .basic {
@@ -151,6 +160,7 @@ body {
     .plan-container {
         flex-direction: column;
         align-items: center;
+        justify-content: space-around;
         height: 100vh;
         overflow-y: scroll;
     }
@@ -166,20 +176,6 @@ body {
     .plan-container .plan a {
         margin-bottom: 15px;
     }
-
-}
-
-@media (max-width: 750px) {
-
-    /*BODY>PLAN STYLES*/
-
-    .plan-container .plan {
-        width: 65%;
-    }
-
-}
-
-@media (max-width: 500px) {
 
     /*BODY>PLAN STYLES*/
 
