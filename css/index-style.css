@@ -1,348 +1,4 @@
 
-/* CSS RESET */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* SHARED CSS STYLES */
-
-html {
-    font-size: 15px;
-    font-family: Bahnschrift, sans-serif;
-}
-
-.hidden {
-    display: none !important;
-}
-
-h1 {
-    font-size: 30px;
-}
-
-h2, h3 {
-    font-size: 25px;
-}
-
-.btn-text {
-    font-size: 20px;
-}
-
-.text {
-    font-size: 15px;
-    line-height: 21px;
-}
-
-.white {
-    color: #ffffff;
-}
-
-.b-white {
-    background-color: #ffffff;
-}
-
-.hov-white:hover {
-    box-shadow: 0px 0px 15px 7px rgba(255,255,255,0.6);
-}
-
-.black {
-    color: #000000;
-}
-
-.b-black {
-    background-color: #000000;
-}
-
-.hov-black:hover {
-    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.6);
-}
-
-.offblack {
-    color: rgba(0,0,0,0.9);
-}
-
-.b-offblack {
-    background-color: rgba(0,0,0,0.9);
-}
-
-.offwhite {
-    color: rgb(231, 231, 231);
-}
-
-.b-offwhite {
-    background-color: rgb(231, 231, 231);
-}
-
-.light-gold {
-    color: #DBD072;
-}
-
-.b-light-gold {
-    background-color: #DBD072;
-}
-
-.gold {
-    color: #807514;
-}
-
-.b-gold {
-    background-color: #807514;
-}
-
-.dark-gold {
-    color: #57500D;
-}
-
-.b-dark-gold {
-    background-color: #57500D;
-}
-
-.darker-gold {
-    color: #5E5611;
-}
-
-.b-darker-gold {
-    background-color: #5E5611;
-}
-
-.darkgray {
-    color: #A4A4A4;
-}
-
-.b-darkgray {
-    background-color: #A4A4A4;
-}
-
-.hov-darkergray:hover {
-    box-shadow: 0px 0px 15px 10px rgba(117, 117, 117, 0.7);
-}
-
-.darkergray {
-    color: #454545;
-}
-
-.b-darkergray {
-    background-color: #454545;
-}
-
-.lightgray {
-    color: #D1D1D1;
-}
-
-.b-lightgray {
-    background-color: #D1D1D1;
-}
-
-.hov-lightgray:hover {
-    box-shadow: 0px 0px 15px 10px rgba(129, 129, 129, 0.8);
-}
-
-.op-5 {
-    opacity: 0.5;
-}
-
-.op-6 {
-    opacity: 0.6;
-}
-
-.op-7 {
-    opacity: 0.7;
-}
-
-.op-8 {
-    opacity: 0.8;
-}
-
-.rad-10 {
-    border-radius: 10px;
-}
-
-.flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.align-self-center {
-    align-self: center;
-}
-
-.align-center {
-    align-items: center;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
-.justify-around {
-    justify-content: space-around;
-}
-
-.justify-between {
-    justify-content: space-between;
-}
-
-.fill {
-    width: 100%;
-}
-
-.btn {
-    padding: 15px 25px;
-    text-decoration: none;
-    align-self: center;
-    text-align: center;
-}
-
-.margin-b-5 {
-    margin-bottom: 5px;
-}
-
-.margin-b-10 {
-    margin-bottom: 10px;
-}
-
-.margin-b-20 {
-    margin-bottom: 20px;
-}
-
-.margin-b-30 {
-    margin-bottom: 30px;
-}
-
-.margin-b-40 {
-    margin-bottom: 40px;
-}
-
-.margin-b-50 {
-    margin-bottom: 50px;
-}
-
-.margin-t-20 {
-    margin-top: 20px;
-}
-
-.margin-t-30 {
-    margin-top: 30px;
-}
-
-.margin-t-40 {
-    margin-top: 40px;
-}
-
-.margin-r-15 {
-    margin-right: 15px;
-}
-
-.margin-r-20 {
-    margin-right: 20px;
-}
-
-.margin-r-30 {
-    margin-right: 30px;
-}
-
-.margin-l-40 {
-    margin-left: 40px;
-}
-
-.margin-l-30 {
-    margin-left: 30px;
-}
-
-.margin-l-20 {
-    margin-left: 20px;
-}
-
-.margin-l-10 {
-    margin-left: 10px;
-}
-
-.padding-10 {
-    padding: 0 10px;
-}
-
-.padding-20 {
-    padding: 0 20px;
-}
-
-.circle {
-    border-radius: 50%;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.weight-normal {
-    font-weight: normal;
-}
-
-.big-circle {
-    height: 50px;
-    width: 50px;
-}
-
-.little-circle {
-    height: 30px;
-    width: 30px;
-}
-
-.t-align-center {
-    text-align: center;
-}
-
-.block-text {
-    width: 95%;
-    align-self: center;
-}
-
-.block-img {
-    width: 95%;
-    align-self: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-a.text:hover {
-    opacity: 1;
-}
-
-.border-gray {
-    border: 2px solid rgba(0,0,0,0.5);
-}
-
-/* BODY STYLES */
-
-body {
-    height: 100vh;
-}
-
-.mobile-nav {
-    position: fixed;
-    height: 60vh;
-    bottom: 0;
-    z-index: 3;
-    justify-content: space-evenly;
-    border: 3px solid rgba(0,0,0,0.3);
-}
-
-.mobile-nav .fa-x {
-    position: fixed;
-    right: 20px;
-    bottom: 53vh;
-}
-
-.mobile-nav h1:hover {
-    opacity: 1;
-    cursor: pointer;
-}
 
 /* MAIN STYLES */
 
@@ -350,22 +6,9 @@ main {
     background-color: #000000;
 }
 
-.fa-bars {
-    opacity: 0.7;
-}
-
-.fa-bars:hover {
-    cursor: pointer;
-    opacity: 1;
-}
-
 .section {
     padding: 25px 15px 15px 15px;
     flex-direction: column;
-}
-
-.section-padding {
-    padding: 25px 15px 15px 15px;
 }
 
 .header-btns {
@@ -412,10 +55,6 @@ main {
     width: 95%;
 }
 
-.mobile-hide {
-    display: none;
-}
-
 .footer-headers {
     flex-direction: column;
 }
@@ -445,14 +84,6 @@ footer {
     .header-btns a {
         width: 55%;
     }
-
-    .mobile-hide {
-        display: initial;
-    }
-
-    .ipad-hide {
-        display: none;
-    }
 }
 
 /* DESKTOP MEDIA QUERY */
@@ -460,57 +91,6 @@ footer {
 /* 768px */
 
 @media (min-width: 650px) {
-    
-    /* SHARED CSS STYLES */
-
-    html {
-        font-size: 20px;
-    }
-
-    h1 {
-        font-size: 50px;
-    }
-
-    h2 {
-        font-size: 35px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    h4 {
-        font-size: 25px;
-    }
-
-    .btn-text {
-        font-size: 20px;
-    }
-
-    .desktop-flex {
-        display: flex !important;
-    }
-
-    .text {
-        font-size: 18px;
-        line-height: 24px;
-    }
-
-    .block-text .text, .head-text .text {
-        width: 70%;
-    }
-
-    .block-text {
-        width: 50%
-    }
-    
-    .block-img {
-        width: 35%;
-    }
-
-    .desktop-margin-l-20 {
-        margin-left: 20px;
-    }
 
     /* MAIN STYLES */
 
@@ -518,10 +98,6 @@ footer {
         flex-direction: row;
         justify-content: space-around;
         padding: 25px;
-    }
-
-    .section-padding {
-        padding: 50px 25px;
     }
 
     .header-btns {
@@ -545,11 +121,6 @@ footer {
         width: 210px;
         margin-bottom: 0;
         margin-right: 30px;
-    }
-
-    .btn {
-        align-self: initial;
-        width: fit-content;
     }
 
     .editor-div {
@@ -590,14 +161,6 @@ footer {
     ul {
         width: 70%;
         align-self: center;
-    }
-
-    .mobile-hide {
-        display: initial;
-    }
-
-    .desktop-hide {
-        display: none !important;
     }
 
     .footer-headers {
